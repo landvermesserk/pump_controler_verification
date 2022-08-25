@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6cc951d4-4816-4cbd-9736-262f830c24d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/433Utils/RPi_utils/steuerung" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/433Utils/RPi_utils/steuerung.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/433Utils/RPi_utils/steuerung_arch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/Arduino_sketches/RF_Sniffer/RF_Sniffer.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/Arduino_sketches/RF_Sniffer/RF_Sniffer.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/Arduino_sketches/Sanity Checks/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/Arduino_sketches/Sanity Checks/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/Arduino_sketches/Sanity Checks/Receiver/Receiver.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/Arduino_sketches/Sanity Checks/Receiver/Receiver.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/Arduino_sketches/Sanity Checks/Sender/Sender.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/Arduino_sketches/Sanity Checks/Sender/Sender.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/Arduino_sketches/Send_Demo/Send_Demo.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/Arduino_sketches/Send_Demo/Send_Demo.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/Arduino_sketches/Servo_Receive_Demo/Servo_Receive_Demo.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/Arduino_sketches/Servo_Receive_Demo/Servo_Receive_Demo.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/CHIP_utils/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/CHIP_utils/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/CHIP_utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/CHIP_utils/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/CHIP_utils/RFSniffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/CHIP_utils/RFSniffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/CHIP_utils/codesend.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/CHIP_utils/codesend.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/CHIP_utils/send.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/CHIP_utils/send.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/RPi_utils/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/RPi_utils/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/RPi_utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/RPi_utils/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/RPi_utils/RFSniffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/RPi_utils/RFSniffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/RPi_utils/codesend.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/RPi_utils/codesend.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/RPi_utils/send.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/RPi_utils/send.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/RCSwitch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/RCSwitch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/RCSwitch.h" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/RCSwitch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Advanced/ReceiveDemo_Advanced.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Advanced/ReceiveDemo_Advanced.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Advanced/helperfunctions.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Advanced/helperfunctions.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Advanced/output.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Advanced/output.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Simple/ReceiveDemo_Simple.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/ReceiveDemo_Simple/ReceiveDemo_Simple.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/SendDemo/SendDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/SendDemo/SendDemo.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeA_WithDIPSwitches/TypeA_WithDIPSwitches.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeA_WithDIPSwitches/TypeA_WithDIPSwitches.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeA_WithDIPSwitches_Lightweight/TypeA_WithDIPSwitches_Lightweight.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeA_WithDIPSwitches_Lightweight/TypeA_WithDIPSwitches_Lightweight.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeB_WithRotaryOrSlidingSwitches/TypeB_WithRotaryOrSlidingSwitches.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeB_WithRotaryOrSlidingSwitches/TypeB_WithRotaryOrSlidingSwitches.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeC_Intertechno/TypeC_Intertechno.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeC_Intertechno/TypeC_Intertechno.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeD_REV/TypeD_REV.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeD_REV/TypeD_REV.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/Webserver/Webserver.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/Webserver/Webserver.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/keywords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/keywords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/.github/workflows/build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/COPYING.LESSER" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/COPYING.LESSER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/INSTALL" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/INSTALL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/People" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/People" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian-template/wiringPi/DEBIAN/control" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian-template/wiringPi/DEBIAN/control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/changelog" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/changelog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/compat" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/compat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/control" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/copyright" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/copyright" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/libwiringpi-dev.dirs" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/libwiringpi-dev.dirs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/libwiringpi-dev.install" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/libwiringpi-dev.install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/libwiringpi2.install" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/libwiringpi2.install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/libwiringpi2.shlibs" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/libwiringpi2.shlibs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/rules" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/wiringpi.dirs" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/wiringpi.dirs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/debian/wiringpi.install" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/debian/wiringpi.install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/ds1302.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/ds1302.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/ds1302.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/ds1302.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/font.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/font.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/gertboard.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/gertboard.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/gertboard.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/gertboard.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/lcd.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/lcd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/lcd.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/lcd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/lcd128x64.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/lcd128x64.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/lcd128x64.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/lcd128x64.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/maxdetect.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/maxdetect.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/maxdetect.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/maxdetect.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/piFace.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/piFace.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/piFace.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/piFace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/piFaceOld.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/piFaceOld.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/piGlow.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/piGlow.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/piGlow.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/piGlow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/piNes.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/piNes.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/piNes.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/piNes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/scrollPhat.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/scrollPhat.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/scrollPhat.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/scrollPhat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/devLib/scrollPhatFont.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/devLib/scrollPhatFont.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/COPYING.LESSER" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/COPYING.LESSER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/7segments.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/7segments.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/buttons.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/buttons.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/gertboard.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/gertboard.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/record.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/record.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/temperature.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/temperature.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/voltmeter.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/voltmeter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Gertboard/vumeter.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Gertboard/vumeter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiFace/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiFace/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiFace/blink.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiFace/blink.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiFace/buttons.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiFace/buttons.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiFace/ladder.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiFace/ladder.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiFace/metro.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiFace/metro.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiFace/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiFace/motor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiFace/reaction.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiFace/reaction.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiGlow/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiGlow/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiGlow/piGlow0.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiGlow/piGlow0.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiGlow/piGlow1.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiGlow/piGlow1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/PiGlow/piglow.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/PiGlow/piglow.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/README.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/README.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink-thread.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink-thread.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink.rtb" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink.rtb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink.sh" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink12.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink12.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink12drcs.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink12drcs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink6drcs.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink6drcs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink8-drcn.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink8-drcn.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/blink8.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/blink8.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/clock.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/clock.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/delayTest.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/delayTest.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/ds1302.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/ds1302.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/header.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/header.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/isr-osc.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/isr-osc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/isr.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/isr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/lcd-adafruit.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/lcd-adafruit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/lcd.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/lcd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/lowPower.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/lowPower.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/max31855.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/max31855.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/nes.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/nes.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/okLed.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/okLed.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/pwm.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/pwm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/binary.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/binary.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/blink-io.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/blink-io.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/blink.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/blink.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/blink.sh" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/blink.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/bright.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/bright.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/button.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/button.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/q2w/volts.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/q2w/volts.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/rht03.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/rht03.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/scrollPhat/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/scrollPhat/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/scrollPhat/scphat.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/scrollPhat/scphat.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/scrollPhat/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/scrollPhat/test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/serialRead.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/serialRead.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/serialTest.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/serialTest.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/servo.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/servo.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/softPwm.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/softPwm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/softTone.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/softTone.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/speed.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/speed.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/spiSpeed.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/spiSpeed.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/examples/wfi.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/examples/wfi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/gpio/COPYING.LESSER" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/gpio/COPYING.LESSER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/gpio/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/gpio/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/gpio/gpio.1" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/gpio/gpio.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/gpio/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/gpio/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/gpio/pintest" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/gpio/pintest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/gpio/readall.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/gpio/readall.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/newVersion" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/newVersion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/pins/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/pins/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/pins/pins.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/pins/pins.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/pins/pins.tex" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/pins/pins.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/COPYING.LESSER" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/COPYING.LESSER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/ads1115.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/ads1115.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/ads1115.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/ads1115.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/bmp180.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/bmp180.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/bmp180.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/bmp180.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/drcNet.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/drcNet.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/drcNet.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/drcNet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/drcSerial.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/drcSerial.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/drcSerial.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/drcSerial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/ds18b20.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/ds18b20.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/ds18b20.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/ds18b20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/htu21d.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/htu21d.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/htu21d.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/htu21d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/max31855.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/max31855.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/max31855.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/max31855.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/max5322.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/max5322.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/max5322.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/max5322.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23008.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23008.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23008.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23008.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23016.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23016.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23016.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23016.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23016reg.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23016reg.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23017.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23017.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23017.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23017.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s08.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s08.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s08.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s08.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s17.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s17.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s17.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23s17.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23x08.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23x08.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23x0817.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp23x0817.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3002.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3002.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3002.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3002.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3004.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3004.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3004.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3004.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3422.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3422.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3422.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp3422.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp4802.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp4802.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/mcp4802.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/mcp4802.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/noMoreStatic" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/noMoreStatic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8574.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8574.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8574.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8574.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8591.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8591.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8591.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/pcf8591.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/piHiPri.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/piHiPri.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/piThread.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/piThread.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/pseudoPins.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/pseudoPins.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/pseudoPins.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/pseudoPins.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/rht03.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/rht03.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/rht03.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/rht03.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/sn3218.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/sn3218.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/sn3218.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/sn3218.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/softPwm.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/softPwm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/softPwm.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/softPwm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/softServo.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/softServo.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/softServo.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/softServo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/softTone.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/softTone.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/softTone.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/softTone.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/sr595.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/sr595.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/sr595.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/sr595.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPi.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPi.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiI2C.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiI2C.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiI2C.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiI2C.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiSPI.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiSPI.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiSPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringPiSPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringSerial.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringSerial.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringSerial.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringSerial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringShift.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringShift.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wiringShift.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wiringShift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wpiExtensions.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wpiExtensions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPi/wpiExtensions.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPi/wpiExtensions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/daemonise.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/daemonise.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/daemonise.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/daemonise.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/drcNetCmd.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/drcNetCmd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/network.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/network.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/network.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/network.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/runRemote.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/runRemote.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/runRemote.h" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/runRemote.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi/wiringPiD/wiringpid.c" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/wiringPiD/wiringpid.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/433Utils" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1yVkq4lOrbIhLavQODZW3REhWsw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cc951d4-4816-4cbd-9736-262f830c24d1" name="Changes" comment="" />
+      <created>1632344332292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632344332292</updated>
+      <workItem from="1632344334463" duration="684000" />
+      <workItem from="1632423392873" duration="734000" />
+      <workItem from="1632658072648" duration="7328000" />
+      <workItem from="1633030551958" duration="26000" />
+      <workItem from="1633033393123" duration="690000" />
+      <workItem from="1633287172655" duration="632000" />
+      <workItem from="1634480656331" duration="358000" />
+      <workItem from="1634484027094" duration="1795000" />
+      <workItem from="1637602500530" duration="1300000" />
+      <workItem from="1637613784908" duration="2143000" />
+      <workItem from="1637669245414" duration="4937000" />
+      <workItem from="1637930213710" duration="13193000" />
+      <workItem from="1638090572051" duration="609000" />
+      <workItem from="1638120912441" duration="4426000" />
+      <workItem from="1638131702186" duration="424000" />
+      <workItem from="1638484022885" duration="624000" />
+      <workItem from="1640429118812" duration="617000" />
+      <workItem from="1640597470666" duration="1109000" />
+      <workItem from="1640799544982" duration="709000" />
+      <workItem from="1642948421710" duration="681000" />
+      <workItem from="1653245985549" duration="672000" />
+      <workItem from="1661274940087" duration="266000" />
+      <workItem from="1661275474752" duration="1567000" />
+      <workItem from="1661357205280" duration="1597000" />
+      <workItem from="1661363108730" duration="5311000" />
+      <workItem from="1661457972322" duration="1754000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

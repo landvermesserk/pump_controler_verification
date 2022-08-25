@@ -1,0 +1,23 @@
+version: 1
+formatters:
+  simple:
+    format: "%(asctime)s - %(name)s - %(levelname)s: %(message)s"
+    datefmt: '%Y-%m-%d %H:%M:%S'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    stream: ext://sys.stdout
+  info_debug_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    formatter: simple
+    filename: /home/pi/PycharmProjects/pump_controler_verification/log/trc_verification.log
+    maxBytes: 10000000
+    backupCount: 5
+
+loggers:
+  server_interface_trc:
+   handlers: [ info_debug_file_handler ]
+   level: INFO
+
+
