@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6cc951d4-4816-4cbd-9736-262f830c24d1" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/433Utils/RPi_utils/steuerung" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/433Utils/RPi_utils/steuerung.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/433Utils/RPi_utils/steuerung_arch.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico/server_pico.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/433Utils" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/433Utils/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/433Utils/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/433Utils/Arduino_sketches/RF_Sniffer/RF_Sniffer.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/Arduino_sketches/RF_Sniffer/RF_Sniffer.ino" afterDir="false" />
@@ -43,6 +54,7 @@
       <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeD_REV/TypeD_REV.ino" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/TypeD_REV/TypeD_REV.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/examples/Webserver/Webserver.pde" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/examples/Webserver/Webserver.pde" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/433Utils/rc-switch/keywords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/433Utils/rc-switch/keywords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiringPi" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WiringPi/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WiringPi/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WiringPi/COPYING.LESSER" beforeDir="false" afterPath="$PROJECT_DIR$/WiringPi/COPYING.LESSER" afterDir="false" />
@@ -247,6 +259,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
     <envs>
       <env key="FLASK_APP" value="app" />
@@ -259,7 +278,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/433Utils" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -272,6 +291,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="1yVkq4lOrbIhLavQODZW3REhWsw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -280,9 +302,25 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pluralmaster/PycharmProjects/pump_controler_verification&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testing" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -317,6 +355,12 @@
       <workItem from="1661357205280" duration="1597000" />
       <workItem from="1661363108730" duration="5311000" />
       <workItem from="1661457972322" duration="1754000" />
+      <workItem from="1661461860035" duration="953000" />
+      <workItem from="1661524441236" duration="616000" />
+      <workItem from="1694972560949" duration="991000" />
+      <workItem from="1694973716849" duration="3529000" />
+      <workItem from="1696356036625" duration="596000" />
+      <workItem from="1697822000398" duration="671000" />
     </task>
     <servers />
   </component>
