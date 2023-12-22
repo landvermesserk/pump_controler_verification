@@ -1,20 +1,19 @@
 import network
 import socket
 from time import sleep
-# from picozero import pico_temp_sensor, pico_led
-import machine
-
-from machine import Pin
+from machine import ADC, Pin
 import time
 import struct
 
-# pico_led = machine.Pin("LED", machine.Pin.OUT)
-
-
 ssid = ''
 password = ""
+port = 8893
 
 WATCHDOG = struct.pack("8s", "WATCHDOG".encode('utf-8'))
+# Calibraton values
+min_moisture = 19200
+max_moisture = 49300
+soil = ADC(Pin(26))
 
 
 def connect():
@@ -31,7 +30,7 @@ def connect():
 
 def open_socket(ip):
     # Open a socket
-    address = (ip, 80)
+    address = (ip, port)
     connection = socket.socket()
     connection.bind(address)
     connection.listen(1)
@@ -44,16 +43,21 @@ def serve(connection):
     print("Connection established.")
     client.send(WATCHDOG)
     print("Sent data.")
-    while True:
-        message = client.recv(1024)
-        if message == WATCHDOG:
-            print("Received WATCHDOG!")
-            client.send(WATCHDOG)
-            print("Sent WATCHDOG!")
-        else:
-            time.sleep(1)
-
-    client.close()
+    try:
+        while True:
+            message = client.recv(1024)
+            if message == WATCHDOG:
+                print("Received WATCHDOG!")
+                client.send(WATCHDOG)
+                print("Sent WATCHDOG!")
+            else:
+                time.sleep(1)
+            moisture = int((max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture))
+            print(moisture)
+            # client.send(struct.pack("i", moisture))
+    except Exception as e:
+        print(e)
+        client.close()
 
 
 # serve(connection)
@@ -76,6 +80,9 @@ def server(connection):
 ip = connect()
 connection = open_socket(ip)
 server(connection)
+
+
+
 
 
 

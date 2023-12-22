@@ -4,7 +4,6 @@ import struct
 
 WATCHDOG = struct.pack("8s", "WATCHDOG".encode('utf-8'))
 
-
 def connect(host, port):
     timeout = 45
     retries_connection = 3
@@ -18,7 +17,7 @@ def connect(host, port):
             sock.connect((host, port))
             print("Connection successful")
             connected = True
-            return sock
+            return sock, connected
         except Exception as e:
             print(e)
             tries += 1
@@ -58,20 +57,20 @@ def main(host, port):
         try:
             if not connected or int(time.time() - time_receive_watchdog) > 45:
                 if connected:
-                    print("Did no receive watchdog.")
-                sock = connect(host, port)
+                    print("Did not receive watchdog.")
+                sock, connected = connect(host, port)
                 time_send_message = time.time()
                 if not sock:
                     print("Close connection!")
                     break
             if int(time.time() - time_receive_watchdog) > 9:
                 print("Receiving message.")
-                message = receive()
+                message = receive(sock)
                 print(message)
                 if message == WATCHDOG:
                     print("Received WATCHDOG!")
                     time_receive_watchdog = time.time()
-                    send(WATCHDOG)
+                    send(WATCHDOG, sock)
                     print("Sent WATCHDOG!")
                     time.sleep(1)
                 else:
@@ -84,6 +83,7 @@ def main(host, port):
             time.sleep(10)
 
 
+
 host = ""
-port = 0
+port = 8893
 main(host=host, port=port)
