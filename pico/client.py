@@ -32,6 +32,7 @@ def connect(host, port):
                     return None
             time.sleep(5)
 
+
 def send(msg, sock):
     totalsent = 0
     while totalsent < len(msg):
@@ -40,6 +41,7 @@ def send(msg, sock):
             print("socket connection broken")
             raise RuntimeError("socket connection broken")
         totalsent = totalsent + sent
+
 
 def receive(sock):
     data = sock.recv(1024)
@@ -51,31 +53,21 @@ def receive(sock):
 
 def main(host, port):
     connected = False
-    time_receive_watchdog = time.time()
     while True:
         time.sleep(1)
         try:
-            if not connected or int(time.time() - time_receive_watchdog) > 45:
-                if connected:
-                    print("Did not receive watchdog.")
+            if not connected:
                 sock, connected = connect(host, port)
-                time_send_message = time.time()
                 if not sock:
                     print("Close connection!")
                     break
-            if int(time.time() - time_receive_watchdog) > 9:
-                print("Receiving message.")
-                message = receive(sock)
-                print(message)
-                if message == WATCHDOG:
-                    print("Received WATCHDOG!")
-                    time_receive_watchdog = time.time()
-                    send(WATCHDOG, sock)
-                    print("Sent WATCHDOG!")
-                    time.sleep(1)
-                else:
-                    print("Received unknown message!")
-                    sock.close()
+            message = receive(sock)
+            moisture = struct.unpack("i", message)[0]
+            print(moisture)
+            send(WATCHDOG, sock)
+            print("Sent WATCHDOG!")
+            time.sleep(1)
+
 
         except Exception as e:
             print(e)
@@ -83,7 +75,7 @@ def main(host, port):
             time.sleep(10)
 
 
-
+# host = "192.168.0.64"
 host = ""
 port = 8893
 main(host=host, port=port)

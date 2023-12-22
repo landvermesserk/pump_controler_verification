@@ -7,12 +7,13 @@ import struct
 
 ssid = ''
 password = ""
-port = 8893
 
 WATCHDOG = struct.pack("8s", "WATCHDOG".encode('utf-8'))
+
 # Calibraton values
 min_moisture = 19200
 max_moisture = 49300
+port = 8893
 soil = ADC(Pin(26))
 
 
@@ -41,27 +42,22 @@ def open_socket(ip):
 def serve(connection):
     client = connection.accept()[0]
     print("Connection established.")
-    client.send(WATCHDOG)
-    print("Sent data.")
+    time_receive_watchdog = time.time()
     try:
         while True:
-            message = client.recv(1024)
-            if message == WATCHDOG:
-                print("Received WATCHDOG!")
-                client.send(WATCHDOG)
-                print("Sent WATCHDOG!")
+
+            if int(time.time() - time_receive_watchdog) > 10:
+                moisture = int((max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture))
+                client.send(struct.pack("i", moisture))
+                message = client.recv(1024)
+                # print(message)
+                if message == WATCHDOG:
+                    print("Received WATCHDOG!")
+                    time_receive_watchdog = time.time()
             else:
                 time.sleep(1)
-            moisture = int((max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture))
-            print(moisture)
-            # client.send(struct.pack("i", moisture))
     except Exception as e:
-        print(e)
         client.close()
-
-
-# serve(connection)
-
 
 def server(connection):
     connected = False
