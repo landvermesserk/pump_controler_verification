@@ -1,0 +1,31 @@
+source-directory /etc/network/interfaces.d
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet manual
+    bond-master bond0
+    bond-primary eth0 wlan0
+
+
+auto wlan0
+iface wlan0 inet manual
+    bond-master bond0
+    bond-primary eth0 wlan0
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+auto bond0
+iface bond0 inet static
+    address 192.168.178.40
+    netmask 255.255.255.0
+    network 192.168.178.0
+    broadcast 192.168.178.255
+    gateway 192.168.178.1
+    bond-slaves none
+    bond-mode active-backup
+    bond-miimon 100
+    bond-downdelay 200
+    bond-updelay 200
+
