@@ -5,9 +5,12 @@ import os
 import logging
 import logging.config
 import yaml
+from prometheus_client import start_http_server, Gauge
 
 WATCHDOG = struct.pack("8s", "WATCHDOG".encode('utf-8'))
 logger_trc = logging.getLogger("server_interface_trc")
+
+
 
 def connect(host, port):
     timeout = 45
@@ -58,6 +61,11 @@ def receive(sock):
 
 def main(host, port):
     connected = False
+    # Start a Prometheus server on port 8000
+    start_http_server(8000)
+
+    # Create a Gauge metric
+    example_gauge = Gauge('moisture_metric', 'Moisture level in percent.')
     while True:
         time.sleep(1)
         try:
@@ -71,7 +79,8 @@ def main(host, port):
             if connected:
                 message = receive(sock)
                 moisture = struct.unpack("i", message)[0]
-                logger_trc.info(f"Moisture level:m{moisture}")
+                logger_trc.info(f"Moisture level: {moisture}")
+                example_gauge.set(moisture)
                 send(WATCHDOG, sock)
                 logger_trc.info("Sent WATCHDOG!")
                 time.sleep(1)
