@@ -4,7 +4,6 @@ from time import sleep
 from machine import ADC, Pin
 import time
 import struct
-import logging
 
 ssid = ''
 password = ""
@@ -43,24 +42,28 @@ def serve(connection):
     client = connection.accept()[0]
     print("Connection established.")
     time_receive_watchdog = time.time()
-    while True:
-        if int(time.time() - time_receive_watchdog) > 10:
-            moisture = int((max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture))
-            client.send(struct.pack("i", moisture))
-            message = client.recv(1024)
-            if message == WATCHDOG:
-                print("Received WATCHDOG!")
-                time_receive_watchdog = time.time()
-        else:
-            time.sleep(1)
+    try:
+        while True:
+            if int(time.time() - time_receive_watchdog) > 10:
+                moisture = int((max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture))
+                client.send(struct.pack("i", moisture))
+                message = client.recv(1024)
+                if message == WATCHDOG:
+                    print("Received WATCHDOG!")
+                    time_receive_watchdog = time.time()
+            else:
+                time.sleep(1)
 
-    client.close()
+    except Exception as e:
+        print(e)
+        client.close()
 
 
 def server(connection):
-    connected = False
     while True:
+        connected = False
         print("Establish connection.")
+        time.sleep(10)
         try:
             if not connected:
                 server = serve(connection)

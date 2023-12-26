@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cc951d4-4816-4cbd-9736-262f830c24d1" name="Changes" comment="added logging">
+    <list default="true" id="6cc951d4-4816-4cbd-9736-262f830c24d1" name="Changes" comment="fixed bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pico/server_with_sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/pico/server_with_sensor.py" afterDir="false" />
     </list>
@@ -137,7 +137,8 @@
       <workItem from="1703414136664" duration="1311000" />
       <workItem from="1703419254267" duration="15000" />
       <workItem from="1703525716439" duration="2950000" />
-      <workItem from="1703597315166" duration="503000" />
+      <workItem from="1703597315166" duration="618000" />
+      <workItem from="1703598920224" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="added pico communication">
       <option name="closed" value="true" />
@@ -179,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703587348277</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed bugs">
+      <option name="closed" value="true" />
+      <created>1703597830700</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703597830700</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +200,7 @@
     <MESSAGE value="server only sends sensor data and gets Watchdog back" />
     <MESSAGE value="added network interfaces" />
     <MESSAGE value="added logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="added logging" />
+    <MESSAGE value="fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs" />
   </component>
 </project>
