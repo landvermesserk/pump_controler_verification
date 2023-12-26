@@ -1,8 +1,13 @@
 import time
 import socket
 import struct
+import os
+import logging
+import logging.config
+import yaml
 
 WATCHDOG = struct.pack("8s", "WATCHDOG".encode('utf-8'))
+logger_trc = logging.getLogger("server_interface_trc")
 
 def connect(host, port):
     timeout = 45
@@ -11,15 +16,15 @@ def connect(host, port):
     connected = False
     while not connected and tries < retries_connection:
         try:
-            print("Connect to server")
+            logger_trc.info("Connect to server")
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.settimeout(timeout)
             sock.connect((host, port))
-            print("Connection successful")
+            logger_trc.info("Connection successful")
             connected = True
             return sock, connected
         except Exception as e:
-            print(e)
+            logger_trc.info(e)
             tries += 1
             if tries == retries_connection:
                 try:
@@ -38,7 +43,7 @@ def send(msg, sock):
     while totalsent < len(msg):
         sent = sock.send(msg[totalsent:])
         if sent == 0:
-            print("socket connection broken")
+            logger_trc.info("socket connection broken")
             raise RuntimeError("socket connection broken")
         totalsent = totalsent + sent
 
@@ -47,7 +52,7 @@ def receive(sock):
     data = sock.recv(1024)
     if data == b'':
         sock.close()
-        print("Socket connection broken. Close connection and stop thread.")
+        logger_trc.info("Socket connection broken. Close connection and stop thread.")
     return data
 
 
@@ -59,23 +64,33 @@ def main(host, port):
             if not connected:
                 sock, connected = connect(host, port)
                 if not sock:
-                    print("Close connection!")
+                    logger_trc.info("Close connection!")
+                    connected = False
+                    time.sleep(5)
                     break
-            message = receive(sock)
-            moisture = struct.unpack("i", message)[0]
-            print(moisture)
-            send(WATCHDOG, sock)
-            print("Sent WATCHDOG!")
-            time.sleep(1)
+            if connected:
+                message = receive(sock)
+                moisture = struct.unpack("i", message)[0]
+                logger_trc.info(f"Moisture level:m{moisture}")
+                send(WATCHDOG, sock)
+                logger_trc.info("Sent WATCHDOG!")
+                time.sleep(1)
+            else:
+                time.sleep(2)
 
 
         except Exception as e:
-            print(e)
+            logger_trc.info(e)
             sock.close()
+            connected = False
             time.sleep(10)
 
 
-# host = "192.168.0.64"
-host = ""
-port = 8893
-main(host=host, port=port)
+if __name__ == "__main__":
+    logging_path = "/home/pi/PycharmProjects/pico/logging"
+    with open(os.path.join(logging_path, "logging.yml")) as f:
+        loggingconf = yaml.safe_load(f)
+    logging.config.dictConfig(loggingconf)
+    host = "192.168.178.20"
+    port = 8893
+    main(host=host, port=port)
