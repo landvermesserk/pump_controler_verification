@@ -4,6 +4,7 @@ from time import sleep
 from machine import ADC, Pin
 import time
 import struct
+import logging
 
 ssid = ''
 password = ""
@@ -13,7 +14,6 @@ WATCHDOG = struct.pack("8s", "WATCHDOG".encode('utf-8'))
 # Calibraton values
 min_moisture = 19200
 max_moisture = 49300
-port = 8893
 soil = ADC(Pin(26))
 
 
@@ -31,7 +31,7 @@ def connect():
 
 def open_socket(ip):
     # Open a socket
-    address = (ip, port)
+    address = (ip, 8893)
     connection = socket.socket()
     connection.bind(address)
     connection.listen(1)
@@ -43,21 +43,19 @@ def serve(connection):
     client = connection.accept()[0]
     print("Connection established.")
     time_receive_watchdog = time.time()
-    try:
-        while True:
+    while True:
+        if int(time.time() - time_receive_watchdog) > 10:
+            moisture = int((max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture))
+            client.send(struct.pack("i", moisture))
+            message = client.recv(1024)
+            if message == WATCHDOG:
+                print("Received WATCHDOG!")
+                time_receive_watchdog = time.time()
+        else:
+            time.sleep(1)
 
-            if int(time.time() - time_receive_watchdog) > 10:
-                moisture = int((max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture))
-                client.send(struct.pack("i", moisture))
-                message = client.recv(1024)
-                # print(message)
-                if message == WATCHDOG:
-                    print("Received WATCHDOG!")
-                    time_receive_watchdog = time.time()
-            else:
-                time.sleep(1)
-    except Exception as e:
-        client.close()
+    client.close()
+
 
 def server(connection):
     connected = False
